@@ -31,7 +31,7 @@ body {
 #gradient-box {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top right, #2d388a, #00aeef);
+  background: linear-gradient(to top right, #433AA0, #4EC4C9);
 }
 
 /* create reactangle based number */
@@ -40,21 +40,21 @@ body {
 }
 
 #one-one{
-  z-index: 2;
+  z-index: 20;
   position: absolute;
   bottom: 10px;
   width: 30px;
   height: 100px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
 }
 
 #one-two{
   z-index: 1;
   position: absolute;
   border-radius: 5px;
-  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
   left: -30px;
   bottom: 110px;
   width: 30px;
@@ -65,23 +65,27 @@ body {
 
 .zero {
   position: absolute;
-  background-color: brown;
-  width: 75px;
-  height: 75px;
-  bottom: 20px;
   border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: 25px solid white;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
 }
 
-.zero-hole {
-  position: absolute;
-  background-color: brown;
-  width: 25px;
-  height: 25px;
-  bottom: 20px;
-  border-radius: 100%;
+#zero-one {
+  z-index: 3;
+  bottom: 10px;
+  left: 20px;
+}
+
+#zero-two {
+  z-index: 2;
+  bottom: 10px;
+  left: 105px;
 }
 
 /* Text configuration */
 .text {
   text-transform: uppercase;
+  color: #fff;
 }
