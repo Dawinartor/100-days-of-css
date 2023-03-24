@@ -1,3 +1,7 @@
+body {
+  background-color: antiquewhite;
+}
+
 .frame {
   position: absolute;
   top: 50%;
@@ -7,10 +11,11 @@
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.25);
 	overflow: hidden;
   background: #fff;
   color: #333;
+  border-radius: 10%;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -20,5 +25,63 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, 150%);
+}
+
+#gradient-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, #2d388a, #00aeef);
+}
+
+/* create reactangle based number */
+#number {
+  position: relative;
+}
+
+#one-one{
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  width: 30px;
+  height: 100px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+}
+
+#one-two{
+  z-index: 1;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+  left: -30px;
+  bottom: 110px;
+  width: 30px;
+  height: 50px;
+  background-color:  rgb(255, 255, 255);
+  transform: translate(10px, 51px) rotate(50deg);
+}
+
+.zero {
+  position: absolute;
+  background-color: brown;
+  width: 75px;
+  height: 75px;
+  bottom: 20px;
+  border-radius: 100%;
+}
+
+.zero-hole {
+  position: absolute;
+  background-color: brown;
+  width: 25px;
+  height: 25px;
+  bottom: 20px;
+  border-radius: 100%;
+}
+
+/* Text configuration */
+.text {
+  text-transform: uppercase;
 }
